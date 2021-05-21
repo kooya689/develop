@@ -7,5 +7,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    #ツイートの内容を表示する
+    @tweets = @user.tweets
+
   end
 end
